@@ -35,9 +35,15 @@ public class HdfcBank implements Bank, Bank1{
     }
 
     int sum = 0;
+
     @Override
     public String getBankName() {
-        return "HDFC";
+        return String.valueOf(BankEnum.HDFC);
+    }
+
+    private String testMethod(){
+        return String.valueOf(BankEnum.HDFC);
+
     }
 
     @Override
@@ -58,3 +64,7 @@ public class HdfcBank implements Bank, Bank1{
 // interface A  extend interface B
 
 // class implement interface
+
+// enum -> constants we are using during the whole implementation
+
+// jbdl-57 status -> upcoming , live , running, archived ....
