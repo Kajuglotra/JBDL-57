@@ -31,7 +31,8 @@ public class Client {
 //        System.out.println(BankEnum.valueOf("101"));
         InnerClassDemo demo = new InnerClassDemo();
 
-        InnerClassDemo.InnerClass innerClass = new InnerClassDemo.InnerClass();
+        InnerClassDemo.InnerClass innerClass = demo.new InnerClass();
+        innerClass.printInfo();
 //        InnerClassDemo.InnerClass innerClass1 = demo.new InnerClass();
 
 
